@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: #0d1117;
+  color: #e6edf3;
+  font-family:
+    ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono", Consolas,
+    monospace;
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  background: #0d1117 !important;
+}
+
+.del-tooltip {
+  background: #56ccf2 !important;
+  border: none !important;
+  color: #0d1117 !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(86, 204, 242, 0.5) !important;
+}
+
+.del-tooltip::before {
+  border-top-color: #56ccf2 !important;
+}
+
+.flight-tooltip {
+  background: #161b22 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e6edf3 !important;
+  border-radius: 6px !important;
+  padding: 6px 10px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.flight-tooltip::before {
+  border-top-color: #161b22 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
